@@ -1,12 +1,15 @@
 package com.basic.order;
 
 import com.basic.AppConfig;
+import com.basic.discount.FixDiscountPolicy;
 import com.basic.member.Grade;
 import com.basic.member.Member;
 import com.basic.member.MemberService;
+import com.basic.member.MemoryMemberRepository;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.mockito.internal.matchers.Or;
 
 public class TestOrderService {
 

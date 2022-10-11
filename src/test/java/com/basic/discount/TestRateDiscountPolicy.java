@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class TestRateDIscountPolicyTest {
+public class TestRateDiscountPolicy {
 
     RateDiscountPolicy discountPolicy = new RateDiscountPolicy();
 

@@ -8,6 +8,13 @@ group = 'basic'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
 
+//lombok 설정 추가 시작
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
 repositories {
 	mavenCentral()
 	maven {
@@ -20,6 +27,14 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter:2.7.0'
+	//lombok 라이브러리 추가 시작
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+
+	testCompileOnly 'org.projectlombok:lombok'
+	testAnnotationProcessor 'org.projectlombok:lombok' //lombok 라이브러리 추가 끝
+
+	implementation 'org.projectlombok:lombok:1.18.22'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test:2.7.0'
 }
 
